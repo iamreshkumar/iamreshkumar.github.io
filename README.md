@@ -13,8 +13,8 @@
 
 - 🌱 I’m currently learning AWS Cloud.
 - 💞️ I’m looking to collaborate on Banking/Health Projects.
-- 📫 You can reach me on 📧 **kamresh797@gmail.com**.
+- 📫 You can reach me on 📧 **itsamresh@yahoo.com**
 <!---
-kamresh797/kamresh797 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Itsamresh is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
