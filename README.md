@@ -1,5 +1,5 @@
-- 👋 Hi, I’m Amresh Kumar.
-- 💼 Having 1.5 year experiance in Java Full Stack Development. 
+- 👋 Hi there, I am Amresh Kumar.
+- 💼 Having 2+ year experiance in Java Full Stack Development. 
 
 - 👇👇 𝐂𝐮𝐫𝐫𝐞𝐧𝐭𝐥𝐲 𝐖𝐨𝐫𝐤𝐢𝐧𝐠 𝐨𝐧 𝐁𝐞𝐥𝐨𝐰 𝐭𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐢𝐞𝐬👇👇
 
@@ -15,6 +15,6 @@
 - 🤝 I’m looking to collaborate on Banking/Health/E-commerce Projects.
 - 📫 You can reach me on 📧 **itsamresh@yahoo.com**
 <!---
-Itsamresh is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Amresh  is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
