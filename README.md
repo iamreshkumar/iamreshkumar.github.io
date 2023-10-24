@@ -17,23 +17,6 @@
 <a href="https://twitter.com/me_amresh" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="me_amresh" height="30" width="40" /></a>
 </p>
 
-<style>
-  .custom-link {
-    margin-right: 10px;
-    font-size: 24px;
-    width: 400px;
-    height: 400px;
-    display: inline-block;
-  }
-
-  .custom-link img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-</style>
-
 <h1>Languages and Tools:</h1>
 <p align="left"> 
   <a href="https://developer.android.com" target="_blank" rel="noreferrer" class="custom-link">
