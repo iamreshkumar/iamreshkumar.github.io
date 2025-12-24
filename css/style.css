@@ -704,7 +704,7 @@ a {
     .timeline::before {
         left: 28px;
         top: 175px;
-        bottom: 362px;
+        bottom: 495px;
     }
     
     .timeline-content {
@@ -733,4 +733,5 @@ a {
         }
     }
 }
+
 
