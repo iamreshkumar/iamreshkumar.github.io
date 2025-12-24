@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Resume | Amresh Kumar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css-pages/resume.css">
+  </head>
+  <body>
+    <!-- Top scroll progress bar -->
+    <div id="scroll-progress"></div>
+    <!-- Floating background circles -->
+    <div class="floating-bg">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <!-- Neon particle canvas -->
+    <canvas id="particle-canvas"></canvas>
+    <main class="resume-page">
+      <div class="resume-card">
+        <!-- ========================= -->
+        <!-- HEADER                    -->
+        <!-- ========================= -->
+        <header class="resume-top fade-in">
+          <div class="resume-top-main">
+            <!-- Left: name + title -->
+            <div class="resume-info">
+              <h1 class="resume-name">Amresh Kumar</h1>
+              <p class="resume-role">Senior Software Engineer</p>
+              <p class="resume-tagline"> Java · Spring Boot · Microservices · Cloud · Enterprise Integrations </p>
+              <p class="resume-contact">
+                <span>
+                  <i class="fas fa-envelope"></i> amresh.wpc@gmail.com </span>
+                <span>
+                  <i class="fas fa-phone"></i> +91 9939111603 </span>
+              </p>
+            </div>
+            <!-- Right: action buttons -->
+            <div class="resume-top-actions">
+              <a href="https://drive.google.com/file/d/1Dmq0wlfSN7EYEhbtigF3XicLdT5A2iGs/view?usp=sharing" target="_blank" class="btn btn-primary">
+                <i class="fas fa-download"></i> ATS-Friendly Resume </a>
+              <a href="https://drive.google.com/file/d/128lEdgg5HqpER9800Sc6WlwhyMGY99vc/view?usp=drive_link" target="_blank" class="btn btn-secondary">
+                <i class="fas fa-download"></i> Easy-to-Read Resume </a>
+            </div>
+        </header>
+        <!-- ========================= -->
+        <!-- PROFILE                   -->
+        <!-- ========================= -->
+        <section class="resume-section fade-in">
+          <h2>Profile</h2>
+          <p> Senior software engineer with 5+ years of experience building scalable Java and Spring Boot backends, REST APIs, and microservices for high‑volume enterprise platforms. Specialized in integrating Oracle Fusion, WorkLlama, VOLT and third‑party services to automate onboarding, workforce management, and excise operations with strong focus on reliability, observability, and measurable business outcomes. </p>
+        </section>
+        <!-- ========================= -->
+        <!-- EXPERIENCE                -->
+        <!-- ========================= -->
+        <section class="resume-section fade-in">
+          <h2>Experience</h2>
+          <!-- Innova -->
+          <article class="resume-item fade-in">
+            <div class="resume-item-inner">
+              <div class="resume-item-head">
+                <div class="resume-head-row">
+                  <span class="resume-company">Software Engineer · Innova Solutions</span>
+                  <span class="resume-date">Apr 2024 – Present</span>
+                </div>
+                <div class="resume-head-row">
+                  <span class="resume-project">Onboarding & Setup Portal</span>
+                  <span class="resume-location">Hyderabad, India</span>
+                </div>
+              </div>
+              <ul>
+                <li>Architected a high-traffic onboarding portal with Spring Boot microservices, integrating Oracle Fusion, WorkLlama, First Advantage, and Dropbox, reducing onboarding time by 60% and processing 100K+ transactions/month.</li>
+                <li>Optimized Azure cloud deployments, improving auto-scaling, fault tolerance, and reducing cloud spend by 25%.</li>
+                <li>Implemented observability with ELK and OpenTelemetry, cutting debugging time by 50% and mentoring juniors in microservices and cloud cost optimization.</li>
+              </ul>
+              <p class="resume-tech-stack">
+                <strong>Tech Stack:</strong> Java, Spring Boot, Microservices, Oracle Fusion, WorkLlama, Azure, Jenkins, Jaeger
+              </p>
+            </div>
+          </article>
+          <!-- Smart Rain -->
+          <article class="resume-item fade-in">
+            <div class="resume-item-inner">
+              <div class="resume-item-head">
+                <div class="resume-head-row">
+                  <span class="resume-company">Software Engineer · Smart Rain</span>
+                  <span class="resume-date">Mar 2023 – Mar 2024</span>
+                </div>
+                <div class="resume-head-row">
+                  <span class="resume-project">IoT Irrigation Platform</span>
+                  <span class="resume-location">Hyderabad, India</span>
+                </div>
+              </div>
+              <ul>
+                <li>Developed scalable Spring Boot REST APIs and Angular dashboard for real-time irrigation automation, reducing water wastage by 45% across customer deployments.</li>
+                <li>Enhanced API performance with asynchronous processing and Redis caching, lowering latency by 40% while ensuring secure access via JWT and OAuth2.</li>
+                <li>Collaborated with product, hardware, and customer-success teams to align features with market needs, achieving >90% code coverage with unit and integration tests.</li>
+              </ul>
+              <p class="resume-tech-stack">
+                <strong>Tech Stack:</strong> Java, Spring Boot, Angular, TypeScript, Redis, JWT
+              </p>
+            </div>
+          </article>
+          <!-- C-TEL Infosystems -->
+          <article class="resume-item fade-in">
+            <div class="resume-item-inner">
+              <div class="resume-item-head">
+                <div class="resume-head-row">
+                  <span class="resume-company">Junior Software Engineer · C-TEL Infosystems</span>
+                  <span class="resume-date">Apr 2021 – Mar 2023</span>
+                </div>
+                <div class="resume-head-row">
+                  <span class="resume-project">Excise Dept. Automation – Govt. of HP & Telangana</span>
+                  <span class="resume-location">Hyderabad, India</span>
+                </div>
+              </div>
+              <ul>
+                <li>Developed Java Spring Boot microservices for license tracking, fee processing, and vendor onboarding, handling 500K+ transactions/month and reducing manual intervention by 60%.</li>
+                <li>Built secure REST APIs integrating with GSTN, SAP ERP, and treasury systems, improving compliance and auditability.</li>
+                <li>Automated deployments with Jenkins and Docker, reducing release cycles by 50%, and tuned PostgreSQL queries to improve performance by 30%.</li>
+              </ul>
+              <p class="resume-tech-stack">
+                <strong>Tech Stack:</strong> Java, Spring Boot, PostgreSQL, Apache Kafka, Angular
+              </p>
+            </div>
+          </article>
+        </section>
+        <!-- ========================= -->
+        <!-- KEY SKILLS                -->
+        <!-- ========================= -->
+        <section class="resume-section fade-in">
+          <h2>Key Skills</h2>
+          <ul class="resume-skill-pills">
+            <!-- Backend & Frameworks -->
+            <li class="btn btn-secondary">Java 17</li>
+            <li class="btn btn-secondary">Data Structures</li>
+            <li class="btn btn-secondary">Spring Boot</li>
+            <li class="btn btn-secondary">Hibernate</li>
+            <!-- Architecture & Design -->
+            <li class="btn btn-secondary">Microservices</li>
+            <li class="btn btn-secondary">Design Patterns</li>
+            <!-- Frontend -->
+            <li class="btn btn-secondary">Angular</li>
+            <li class="btn btn-secondary">TypeScript</li>
+            <li class="btn btn-secondary">HTML5</li>
+            <li class="btn btn-secondary">CSS / Bootstrap</li>
+            <!-- Databases -->
+            <li class="btn btn-secondary">Database</li>
+            <!-- Messaging & Caching -->
+            <li class="btn btn-secondary">Kafka</li>
+            <li class="btn btn-secondary">Redis</li>
+            <!-- DevOps & CI/CD -->
+            <li class="btn btn-secondary">Docker</li>
+            <li class="btn btn-secondary">Jenkins</li>
+            <!-- Cloud -->
+            <li class="btn btn-secondary">AWS</li>
+            <li class="btn btn-secondary">Azure</li>
+            <!-- Security -->
+            <li class="btn btn-secondary">JWT</li>
+            <li class="btn btn-secondary">SSO</li>
+            <!-- Monitoring & Observability -->
+            <li class="btn btn-secondary">ELK</li>
+            <li class="btn btn-secondary">Jaeger</li>
+            <!-- Tools & Methods -->
+            <li class="btn btn-secondary">Postman/Swagger</li>
+            <li class="btn btn-secondary">Git / Bitbucket</li>
+            <li class="btn btn-secondary">Jira</li>
+            <li class="btn btn-secondary">Agile Scrum</li>
+          </ul>
+        </section>
+        <!-- ========================= -->
+        <!-- EDUCATION                 -->
+        <!-- ========================= -->
+        <section class="resume-section fade-in">
+          <h2>Education</h2>
+          <p class="edu-item">
+            <span class="edu-degree">Master of Computer Applications (MCA)</span>
+            <br>
+            <span class="edu-meta">Osmania University, Hyderabad · CGPA 7.6 / 10</span>
+          </p>
+          <p class="edu-item">
+            <span class="edu-degree">Bachelor of Computer Applications (BCA)</span>
+            <br>
+            <span class="edu-meta">BRABU, Muzaffarpur · 78.6% / 100%</span>
+          </p>
+          <p class="edu-item">
+            <span class="edu-degree">Intermediate of Science (Mathematics)</span>
+            <br>
+            <span class="edu-meta">BSEB · 69% / 100%</span>
+          </p>
+        </section>
+        <!-- ========================= -->
+        <!-- AWARDS                    -->
+        <!-- ========================= -->
+        <section class="resume-section fade-in">
+          <h2>Awards</h2>
+          <ul>
+            <li>Standout Performer – Smart Rain (2023).</li>
+            <li>Top Team Performer – C‑TEL Infosystems (2022).</li>
+          </ul>
+        </section>
+        <!-- ========================= -->
+        <!-- PROJECTS                  -->
+        <!-- ========================= -->
+        <!-- <section class="resume-section fade-in"><h2>Projects</h2><div class="projects-grid"><a href="#" class="project-card fade-in"><h3>Onboarding Platform API</h3><p>
+              Microservice‑based onboarding portal integrating Oracle Fusion, WorkLlama, VOLT and First
+              Advantage to automate candidate hiring, compliance checks and project staffing.
+            </p></a><a href="#" class="project-card fade-in"><h3>IoT Irrigation Dashboard</h3><p>
+              Real‑time dashboard visualizing sensor data, weather feeds and watering events, with water‑usage
+              analytics and alerting for Smart Rain installations.
+            </p></a></div></section> -->
+      </div>
+    </main>
+    <!-- JS file (scroll, particles, print handler) -->
+    <script src="../scripts/resume.js"></script>
+  </body>
+</html>
