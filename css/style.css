@@ -734,4 +734,28 @@ a {
     }
 }
 
+.visit-counter {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  color: var(--text-secondary);
+}
+
+.visit-counter i {
+  color: #7dd3fc;
+}
+
+.visit-counter strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+
+
 
