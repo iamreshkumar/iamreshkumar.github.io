@@ -410,43 +410,28 @@
       }
       document.getElementById("year").textContent = new Date().getFullYear();
 
-const API_KEY = "ut_ESDgfBaupYccmoV4qSuLnvmqs6gXctIWyViUDMUc"; // keep secret if possible
-const BASE_URL = "https://api.counterapi.dev/v2/amresh-kumars-team-2538/first-counter-2538";
+		const visitCount = document.getElementById("visitCount");
 
+if (!visitCount) throw new Error("visitCount element not found");
 
-	if (!sessionStorage.getItem("counted")) {
-  sessionStorage.setItem("counted", "yes");
-
-  fetch(`${BASE_URL}/up`, {
-    method: "POST",
-    headers: {
-      "Authorization": `Bearer ${API_KEY}`,
-      "Content-Type": "application/json"
-    }
-  })
+function fetchCounter(counted = false) {
+  fetch(`/visit?counted=${counted}`)
     .then(res => res.json())
-    .then(data => {
-      visitCount.textContent = data.value;
-    })
-    .catch(err => console.error("Counter increment error:", err));
-
-} else {
-  fetch(BASE_URL, {
-    method: "GET",
-    headers: {
-      "Authorization": `Bearer ${API_KEY}`
-    }
-  })
-    .then(res => res.json())
-    .then(data => {
-      visitCount.textContent = data.value;
-    })
+    .then(data => visitCount.textContent = data.value)
     .catch(err => console.error("Counter fetch error:", err));
+}
+
+if (!sessionStorage.getItem("counted")) {
+  sessionStorage.setItem("counted", "yes");
+  fetchCounter(false); // increment
+} else {
+  fetchCounter(true); // just get value
 }
 		
     </script>
   </body>
 </html>
+
 
 
 
