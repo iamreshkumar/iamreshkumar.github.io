@@ -10,7 +10,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Extracted CSS -->
     <link rel="stylesheet" href="css/style.css" />
-
   </head>
   <body>
     <!-- Header -->
@@ -350,10 +349,9 @@
     <!-- Footer -->
     <footer>
       <div class="container">
-        <p> &copy; <span id="year"></span> Amresh Kumar · Built with ❤️ · 
-           Follow <strong>@stackwithamresh</strong> for IT Career Guidance 🚀
-        </p>
-		<i class="fas fa-eye"></i> <strong id="visitCount">0</strong> views
+        <p> &copy; <span id="year"></span> Amresh Kumar · Built with ❤️ · Follow <strong>@stackwithamresh</strong> for IT Career Guidance 🚀 </p>
+        <i class="fas fa-eye"></i>
+        <strong id="visitCount">1926</strong> views
       </div>
     </footer>
     <!-- Scripts -->
@@ -405,34 +403,19 @@
           return `
 				
 			
-														<span style="animation-delay:${i * 0.3}s">${char}</span>`;
+														
+													<span style="animation-delay:${i * 0.3}s">${char}</span>`;
         }).join('');
       }
       document.getElementById("year").textContent = new Date().getFullYear();
-
-		const visitCount = document.getElementById("visitCount");
-
-if (!visitCount) throw new Error("visitCount element not found");
-
-function fetchCounter(counted = false) {
-  fetch(`/visit?counted=${counted}`)
-    .then(res => res.json())
-    .then(data => visitCount.textContent = data.value)
-    .catch(err => console.error("Counter fetch error:", err));
-}
-
-if (!sessionStorage.getItem("counted")) {
-  sessionStorage.setItem("counted", "yes");
-  fetchCounter(false); // increment
-} else {
-  fetchCounter(true); // just get value
-}
-		
+      let visits = localStorage.getItem("visitCount");
+      if (!visits) {
+        visits = 1;
+      } else {
+        visits = parseInt(visits) + 1;
+      }
+      localStorage.setItem("visitCount", visits);
+      document.getElementById("visitCount").textContent = visits;
     </script>
   </body>
 </html>
-
-
-
-
-
