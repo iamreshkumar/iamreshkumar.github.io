@@ -410,23 +410,44 @@
       }
       document.getElementById("year").textContent = new Date().getFullYear();
 
+const API_KEY = "ut_ESDgfBaupYccmoV4qSuLnvmqs6gXctIWyViUDMUc"; // keep secret if possible
+const BASE_URL = "https://api.counterapi.dev/v2/amresh-kumars-team-2538/first-counter-2538";
 
 
-		if (!sessionStorage.getItem("counted")) {
+	if (!sessionStorage.getItem("counted")) {
   sessionStorage.setItem("counted", "yes");
 
-  fetch("https://api.countapi.xyz/hit/iamreshkumar-portfolio/visits")
+  fetch(`${BASE_URL}/up`, {
+    method: "POST",
+    headers: {
+      "Authorization": `Bearer ${API_KEY}`,
+      "Content-Type": "application/json"
+    }
+  })
     .then(res => res.json())
-    .then(data => visitCount.textContent = data.value);
+    .then(data => {
+      visitCount.textContent = data.value;
+    })
+    .catch(err => console.error("Counter increment error:", err));
+
 } else {
-  fetch("https://api.countapi.xyz/get/iamreshkumar-portfolio/visits")
+  fetch(BASE_URL, {
+    method: "GET",
+    headers: {
+      "Authorization": `Bearer ${API_KEY}`
+    }
+  })
     .then(res => res.json())
-    .then(data => visitCount.textContent = data.value);
+    .then(data => {
+      visitCount.textContent = data.value;
+    })
+    .catch(err => console.error("Counter fetch error:", err));
 }
 		
     </script>
   </body>
 </html>
+
 
 
 
