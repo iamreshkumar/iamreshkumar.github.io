@@ -410,19 +410,23 @@
       }
       document.getElementById("year").textContent = new Date().getFullYear();
 
-	 let visits = localStorage.getItem("visitCount");
 
-     if (!visits) {
-       visits = 1;
-     } else {
-       visits = parseInt(visits) + 1;
-     }
 
-     localStorage.setItem("visitCount", visits);
-     document.getElementById("visitCount").textContent = visits;
+		if (!sessionStorage.getItem("counted")) {
+  sessionStorage.setItem("counted", "yes");
+
+  fetch("https://api.countapi.xyz/hit/iamreshkumar-portfolio/visits")
+    .then(res => res.json())
+    .then(data => visitCount.textContent = data.value);
+} else {
+  fetch("https://api.countapi.xyz/get/iamreshkumar-portfolio/visits")
+    .then(res => res.json())
+    .then(data => visitCount.textContent = data.value);
+}
 		
     </script>
   </body>
 </html>
+
 
 
