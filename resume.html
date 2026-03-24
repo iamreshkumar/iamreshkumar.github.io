@@ -1,323 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Resume | Amresh Kumar</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/resume.css" />
+<head>
+<meta charset="UTF-8">
+<title>Resume | Amresh Kumar</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;font-size:10.5pt;color:#1a1a1a;background:#e8ecf2;min-height:100vh;padding:32px 20px}
+a{color:#1a56a0;text-decoration:none}
 
-  </head>
-  <body>
-    <!-- Top scroll progress bar -->
-    <div id="scroll-progress"></div>
-    <!-- Floating background circles -->
-    <div class="floating-bg">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <!-- Neon particle canvas -->
-    <canvas id="particle-canvas"></canvas>
-    <main class="resume-page">
-      <div class="resume-card">
-        <!-- ========================= -->
-        <!-- HEADER                    -->
-        <!-- ========================= -->
-        <header class="resume-top fade-in">
-          <div class="resume-top-main">
-            <!-- Left: name + title -->
-            <div class="resume-info">
-              <h1 class="resume-name">Amresh Kumar</h1>
-              <p class="resume-role">Senior Software Engineer</p>
-              <p class="resume-tagline"> Java · Spring Boot · Microservices · Cloud · Enterprise Integrations </p>
-              <p class="resume-contact">
-                <span>
-                  <i class="fas fa-envelope"></i> amresh.wpc@gmail.com </span>
-                <span>
-                  <i class="fas fa-phone"></i> +91 9939111603 </span>
-              </p>
-            </div>
-            <!-- Right: action buttons -->
-            <div class="resume-top-actions">
-              <!-- <a href="https://drive.google.com/file/d/1Dmq0wlfSN7EYEhbtigF3XicLdT5A2iGs/view?usp=sharing" target="_blank" class="btn btn-primary">
-                <i class="fas fa-download"></i> ATS-Friendly Resume </a>  -->
-              <a href="https://drive.google.com/file/d/1TV0fqkREahK4XbjnFWWcbf1iRezwV4Ot/view" target="_blank" class="btn btn-secondary">
-                <i class="fas fa-download"></i> Download Resume </a>
-            </div>
-        </header>
-        <!-- ========================= -->
-        <!-- PROFILE                   -->
-        <!-- ========================= -->
-        <section class="resume-section fade-in">
-          <h2>Profile</h2>
-          <p> Senior software engineer with 5+ years of experience building scalable Java and Spring Boot backends, REST APIs, and microservices for high‑volume enterprise platforms. Specialized in integrating Oracle Fusion, WorkLlama, VOLT and third‑party services to automate onboarding, workforce management, and excise operations with strong focus on reliability, observability, and measurable business outcomes. </p>
-        </section>
-        <!-- ========================= -->
-        <!-- EXPERIENCE                -->
-        <!-- ========================= -->
-        <section class="resume-section fade-in">
-          <h2>Experience</h2>
-          <!-- Innova -->
-          <article class="resume-item fade-in">
-            <div class="resume-item-inner">
-              <div class="resume-item-head">
-                <div class="resume-head-row">
-                  <span class="resume-company">Software Engineer · Innova Solutions</span>
-                  <span class="resume-date">Apr 2024 – Present</span>
-                </div>
-                <div class="resume-head-row">
-                  <span class="resume-project">Onboarding & Setup Portal</span>
-                  <span class="resume-location">Hyderabad, India</span>
-                </div>
-              </div>
-              <ul>
-                <li>Architected a high-traffic onboarding portal with Spring Boot microservices, integrating Oracle Fusion, WorkLlama, First Advantage, and Dropbox, reducing onboarding time by 60% and processing 100K+ transactions/month.</li>
-                <li>Optimized Azure cloud deployments, improving auto-scaling, fault tolerance, and reducing cloud spend by 25%.</li>
-                <li>Implemented observability with ELK and OpenTelemetry, cutting debugging time by 50% and mentoring juniors in microservices and cloud cost optimization.</li>
-              </ul>
-              <p class="resume-tech-stack">
-                <strong>Tech Stack:</strong> Java, Spring Boot, Microservices, Oracle Fusion, WorkLlama, Azure, Jenkins, Jaeger
-              </p>
-            </div>
-          </article>
-          <!-- Smart Rain -->
-          <article class="resume-item fade-in">
-            <div class="resume-item-inner">
-              <div class="resume-item-head">
-                <div class="resume-head-row">
-                  <span class="resume-company">Software Engineer · Smart Rain</span>
-                  <span class="resume-date">Mar 2023 – Mar 2024</span>
-                </div>
-                <div class="resume-head-row">
-                  <span class="resume-project">IoT Irrigation Platform</span>
-                  <span class="resume-location">Hyderabad, India</span>
-                </div>
-              </div>
-              <ul>
-                <li>Developed scalable Spring Boot REST APIs and Angular dashboard for real-time irrigation automation, reducing water wastage by 45% across customer deployments.</li>
-                <li>Enhanced API performance with asynchronous processing and Redis caching, lowering latency by 40% while ensuring secure access via JWT and OAuth2.</li>
-                <li>Collaborated with product, hardware, and customer-success teams to align features with market needs, achieving >90% code coverage with unit and integration tests.</li>
-              </ul>
-              <p class="resume-tech-stack">
-                <strong>Tech Stack:</strong> Java, Spring Boot, Angular, TypeScript, Redis, JWT
-              </p>
-            </div>
-          </article>
-          <!-- C-TEL Infosystems -->
-          <article class="resume-item fade-in">
-            <div class="resume-item-inner">
-              <div class="resume-item-head">
-                <div class="resume-head-row">
-                  <span class="resume-company">Junior Software Engineer · C-TEL Infosystems</span>
-                  <span class="resume-date">Apr 2021 – Mar 2023</span>
-                </div>
-                <div class="resume-head-row">
-                  <span class="resume-project">Excise Dept. Automation – Govt. of HP & Telangana</span>
-                  <span class="resume-location">Hyderabad, India</span>
-                </div>
-              </div>
-              <ul>
-                <li>Developed Java Spring Boot microservices for license tracking, fee processing, and vendor onboarding, handling 500K+ transactions/month and reducing manual intervention by 60%.</li>
-                <li>Built secure REST APIs integrating with GSTN, SAP ERP, and treasury systems, improving compliance and auditability.</li>
-                <li>Automated deployments with Jenkins and Docker, reducing release cycles by 50%, and tuned PostgreSQL queries to improve performance by 30%.</li>
-              </ul>
-              <p class="resume-tech-stack">
-                <strong>Tech Stack:</strong> Java, Spring Boot, PostgreSQL, Apache Kafka, Angular
-              </p>
-            </div>
-          </article>
-        </section>
-        <!-- ========================= -->
-        <!-- KEY SKILLS                -->
-        <!-- ========================= -->
-        <section class="resume-section fade-in">
-          <h2>Key Skills</h2>
-          <ul class="resume-skill-pills">
-            <!-- Backend & Frameworks -->
-            <li class="btn btn-secondary">Java 17</li>
-            <li class="btn btn-secondary">Data Structures</li>
-            <li class="btn btn-secondary">Spring Boot</li>
-            <li class="btn btn-secondary">Hibernate</li>
-            <!-- Architecture & Design -->
-            <li class="btn btn-secondary">Microservices</li>
-            <li class="btn btn-secondary">Design Patterns</li>
-            <!-- Frontend -->
-            <li class="btn btn-secondary">Angular</li>
-            <li class="btn btn-secondary">TypeScript</li>
-            <li class="btn btn-secondary">HTML5</li>
-            <li class="btn btn-secondary">CSS / Bootstrap</li>
-            <!-- Databases -->
-            <li class="btn btn-secondary">Database</li>
-            <!-- Messaging & Caching -->
-            <li class="btn btn-secondary">Kafka</li>
-            <li class="btn btn-secondary">Redis</li>
-            <!-- DevOps & CI/CD -->
-            <li class="btn btn-secondary">Docker</li>
-            <li class="btn btn-secondary">Jenkins</li>
-            <!-- Cloud -->
-            <li class="btn btn-secondary">AWS</li>
-            <li class="btn btn-secondary">Azure</li>
-            <!-- Security -->
-            <li class="btn btn-secondary">JWT</li>
-            <li class="btn btn-secondary">SSO</li>
-            <!-- Monitoring & Observability -->
-            <li class="btn btn-secondary">ELK</li>
-            <li class="btn btn-secondary">Jaeger</li>
-            <!-- Tools & Methods -->
-            <li class="btn btn-secondary">Postman/Swagger</li>
-            <li class="btn btn-secondary">Git / Bitbucket</li>
-            <li class="btn btn-secondary">Jira</li>
-            <li class="btn btn-secondary">Agile Scrum</li>
-          </ul>
-        </section>
-        <!-- ========================= -->
-        <!-- EDUCATION                 -->
-        <!-- ========================= -->
-        <section class="resume-section fade-in">
-          <h2>Education</h2>
-          <p class="edu-item">
-            <span class="edu-degree">Master of Computer Applications (MCA)</span>
-            <br>
-            <span class="edu-meta">Osmania University, Hyderabad · CGPA 7.6 / 10</span>
-          </p>
-          <p class="edu-item">
-            <span class="edu-degree">Bachelor of Computer Applications (BCA)</span>
-            <br>
-            <span class="edu-meta">BRABU, Muzaffarpur · 78.6% / 100%</span>
-          </p>
-          <p class="edu-item">
-            <span class="edu-degree">Intermediate of Science (Mathematics)</span>
-            <br>
-            <span class="edu-meta">BSEB · 69% / 100%</span>
-          </p>
-        </section>
-        <!-- ========================= -->
-        <!-- AWARDS                    -->
-        <!-- ========================= -->
-        <section class="resume-section fade-in">
-          <h2>Awards</h2>
-          <ul>
-            <li>Standout Performer – Smart Rain (2023).</li>
-            <li>Top Team Performer – C‑TEL Infosystems (2022).</li>
-          </ul>
-        </section>
-        <!-- ========================= -->
-        <!-- PROJECTS                  -->
-        <!-- ========================= -->
-        <!-- <section class="resume-section fade-in"><h2>Projects</h2><div class="projects-grid"><a href="#" class="project-card fade-in"><h3>Onboarding Platform API</h3><p>
-              Microservice‑based onboarding portal integrating Oracle Fusion, WorkLlama, VOLT and First
-              Advantage to automate candidate hiring, compliance checks and project staffing.
-            </p></a><a href="#" class="project-card fade-in"><h3>IoT Irrigation Dashboard</h3><p>
-              Real‑time dashboard visualizing sensor data, weather feeds and watering events, with water‑usage
-              analytics and alerting for Smart Rain installations.
-            </p></a></div></section> -->
+/* PAGE SHELL */
+.page{background:#fff;max-width:860px;margin:0 auto;border-radius:6px;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,.13),0 2px 8px rgba(0,0,0,.08)}
+
+/* ── HEADER ── */
+.hdr{background:linear-gradient(135deg,#071428 0%,#0d1f42 55%,#112252 100%);padding:32px 40px 0;position:relative;overflow:hidden}
+.hdr-glow-1{position:absolute;top:-60px;right:-40px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(0,180,255,.14),transparent 70%);pointer-events:none}
+.hdr-glow-2{position:absolute;bottom:-80px;left:30px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(124,58,237,.12),transparent 70%);pointer-events:none}
+.hdr-inner{display:flex;justify-content:space-between;align-items:flex-start;gap:2rem;position:relative;z-index:1}
+
+.name-col h1{font-size:2.15rem;font-weight:700;letter-spacing:-.3px;color:#fff;line-height:1.1}
+.name-col h1 span{background:linear-gradient(90deg,#60c8ff,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.role{color:#7eb8f0;font-weight:600;font-size:.97rem;margin:.35rem 0 .2rem;letter-spacing:.02em}
+.tagline{color:#7a94b8;font-size:.8rem;margin-bottom:.85rem}
+.contacts{display:flex;flex-wrap:wrap;gap:.4rem}
+.cc{display:inline-flex;align-items:center;gap:.35rem;font-size:.76rem;color:#a8c4e0;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);padding:.22rem .75rem;border-radius:999px;transition:background .2s,border-color .2s}
+.cc:hover{background:rgba(96,200,255,.15);border-color:rgba(96,200,255,.35);color:#fff}
+.cc svg{width:11px;height:11px;fill:#60c8ff;flex-shrink:0}
+
+.action-col{display:flex;flex-direction:column;gap:.55rem;align-items:flex-end;padding-top:4px;flex-shrink:0}
+.btn{display:inline-flex;align-items:center;gap:.4rem;padding:.5rem 1.2rem;border-radius:999px;font-family:'Inter',sans-serif;font-size:.76rem;font-weight:600;cursor:pointer;border:none;transition:transform .2s,box-shadow .2s;text-decoration:none;white-space:nowrap}
+.btn svg{width:12px;height:12px;fill:currentColor;flex-shrink:0}
+.btn-dl{background:linear-gradient(135deg,#1a56a0,#2563eb);color:#fff;box-shadow:0 4px 16px rgba(37,99,235,.35)}
+.btn-dl:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,99,235,.45)}
+
+/* METRICS STRIP */
+.metrics{display:grid;grid-template-columns:repeat(6,1fr);position:relative;z-index:1;margin-top:22px;border-top:1px solid rgba(255,255,255,.07)}
+.met{padding:13px 8px;text-align:center;border-right:1px solid rgba(255,255,255,.07);cursor:default;transition:background .2s}
+.met:last-child{border-right:none}
+.met:hover{background:rgba(96,200,255,.07)}
+.met-n{font-size:1.2rem;font-weight:700;color:#60c8ff;display:block;line-height:1}
+.met-l{font-size:.6rem;color:#6a84a2;line-height:1.35;margin-top:.25rem;display:block}
+
+/* ── BODY ── */
+.body{padding:26px 40px 32px;background:#fff}
+
+/* SECTION TITLES */
+h2.st{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.18em;color:#1a56a0;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+h2.st::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,#d0daf0,transparent)}
+
+.section{margin-bottom:22px}
+
+/* SUMMARY */
+.summary{font-size:.875rem;color:#334155;line-height:1.75;padding:12px 16px;border-left:3px solid #1a56a0;background:#f5f8ff;border-radius:0 8px 8px 0}
+.summary strong{color:#0f172a}
+
+/* EXPERIENCE */
+.job{margin-bottom:12px;padding:15px 18px;border:1px solid #e8edf5;border-radius:10px;background:#fafbfe;transition:border-color .25s,box-shadow .25s,transform .2s;position:relative;overflow:hidden}
+.job::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,#1a56a0,#7c3aed);border-radius:3px 0 0 3px;opacity:0;transition:opacity .25s}
+.job:hover{border-color:#c7d7f0;box-shadow:0 4px 20px rgba(26,86,160,.1);transform:translateY(-1px)}
+.job:hover::before{opacity:1}
+
+.jh{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:6px;margin-bottom:4px}
+.jco{font-size:.92rem;font-weight:700;color:#0f172a}
+.jdate{font-size:.72rem;color:#fff;background:linear-gradient(135deg,#1a56a0,#2563eb);padding:3px 10px;border-radius:999px;font-weight:600;white-space:nowrap}
+.jproj{font-size:.78rem;color:#1a56a0;font-weight:600;margin-bottom:2px}
+.jloc{font-size:.72rem;color:#94a3b8}
+.jctx{font-size:.76rem;color:#64748b;font-style:italic;margin:5px 0 8px;padding:5px 9px;background:#f1f5fb;border-radius:5px;line-height:1.5}
+.job ul{padding-left:16px;margin-bottom:8px}
+.job li{font-size:.835rem;color:#374151;line-height:1.65;margin-bottom:3px}
+.job li::marker{color:#1a56a0}
+.job li strong{color:#0f172a}
+.tstack{font-size:.72rem;color:#64748b;padding:5px 9px;background:#f8fafc;border-radius:5px;border:1px solid #e2e8f0;margin-top:4px}
+.tstack strong{color:#1a56a0}
+
+/* SKILLS */
+.skills-wrap{display:flex;flex-direction:column;gap:7px}
+.sk-row{display:flex;align-items:baseline;gap:0;border-bottom:1px solid #f1f5f9;padding-bottom:7px}
+.sk-row:last-child{border-bottom:none;padding-bottom:0}
+.sk-cat{min-width:128px;font-size:.72rem;font-weight:700;color:#1a3a6c;flex-shrink:0}
+.sk-pills{display:flex;flex-wrap:wrap;gap:4px}
+.chip{display:inline-block;border-radius:4px;padding:2px 8px;font-size:.72rem;font-weight:500;border:1px solid;transition:transform .15s,box-shadow .15s;cursor:default}
+.chip:hover{transform:translateY(-1px);box-shadow:0 3px 10px rgba(0,0,0,.1)}
+.chip-b{background:#eef2fb;color:#1a3a6c;border-color:#d5e3f7}
+.chip-g{background:#ecfdf5;color:#065f46;border-color:#6ee7b7}
+.chip-p{background:#ede9fe;color:#4c1d95;border-color:#c4b5fd}
+.chip-s{background:#fff7ed;color:#9a3412;border-color:#fed7aa}
+
+/* PROJECT */
+.proj{border-left:3px solid #7c3aed;padding:13px 16px;background:#faf7ff;border-radius:0 10px 10px 0;border:1px solid #e9e3f8;border-left-width:3px;transition:background .2s,transform .2s}
+.proj:hover{background:#f4f0ff;transform:translateY(-1px)}
+.ptitle{font-size:.95rem;font-weight:700;color:#0f172a;display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:6px}
+.pbadge{font-size:.65rem;font-weight:700;color:#7c3aed;background:#ede9fe;padding:2px 8px;border-radius:4px;border:1px solid #c4b5fd}
+.proj ul{padding-left:16px;margin:4px 0 10px}
+.proj li{font-size:.835rem;color:#374151;line-height:1.65;margin-bottom:3px}
+.proj li::marker{color:#7c3aed}
+.ptags{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px}
+.ptag{font-size:.68rem;padding:2px 9px;border-radius:4px;background:#ede9fe;color:#5b21b6;border:1px solid #c4b5fd}
+
+/* AWARDS */
+.awards-row{display:flex;flex-wrap:wrap;gap:8px}
+.award{display:flex;align-items:center;gap:.5rem;padding:.5rem 1.1rem;border-radius:999px;background:#fffbeb;border:1px solid #fcd34d;color:#92400e;font-size:.78rem;font-weight:600;transition:background .2s,transform .2s}
+.award:hover{background:#fef3c7;transform:translateY(-1px)}
+.award svg{width:13px;height:13px;fill:#f59e0b}
+
+/* EDUCATION */
+.edu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.edu-card{padding:12px 15px;border-radius:10px;background:#fafbfe;border:1px solid #e8edf5;transition:border-color .2s,transform .2s,box-shadow .2s}
+.edu-card:hover{border-color:#c7d7f0;box-shadow:0 4px 16px rgba(26,86,160,.09);transform:translateY(-1px)}
+.edu-deg{font-size:.82rem;font-weight:700;color:#0f172a;line-height:1.3}
+.edu-univ{font-size:.73rem;color:#64748b;margin:.3rem 0 .2rem}
+.edu-meta{font-size:.72rem;font-weight:600;color:#1a56a0}
+
+@media(max-width:680px){
+  .hdr{padding:22px 20px 0}
+  .body{padding:18px 20px 24px}
+  .hdr-inner{flex-direction:column}
+  .action-col{align-items:flex-start}
+  .metrics{grid-template-columns:repeat(3,1fr)}
+  .met:nth-child(3){border-right:none}
+  .edu-grid{grid-template-columns:1fr 1fr}
+  .sk-row{flex-direction:column;gap:5px}
+  .sk-cat{min-width:unset}
+}
+@media print{
+  body{background:#fff;padding:0}
+  .page{box-shadow:none;border-radius:0}
+  .hdr{print-color-adjust:exact;-webkit-print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- HEADER -->
+<div class="hdr">
+  <div class="hdr-glow-1"></div>
+  <div class="hdr-glow-2"></div>
+  <div class="hdr-inner">
+    <div class="name-col">
+      <h1>AMRESH <span>KUMAR</span></h1>
+      <p class="role">Senior Backend Engineer</p>
+      <p class="tagline">Java · Spring Boot · Microservices · Distributed Systems · Cloud</p>
+      <div class="contacts">
+        <a href="mailto:amresh.wpc@gmail.com" class="cc">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          amresh.wpc@gmail.com
+        </a>
+        <span class="cc">
+          <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          +91 9939111603
+        </span>
+        <a href="https://linkedin.com/in/iamreshkumar/" target="_blank" class="cc">
+          <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+          linkedin.com/in/iamreshkumar
+        </a>
+        <a href="https://iamreshkumar.github.io/" target="_blank" class="cc">
+          <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          iamreshkumar.github.io
+        </a>
+        <span class="cc">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Hyderabad, India
+        </span>
       </div>
-    </main>
-    <!-- JS file (scroll, particles, print handler) -->
-    <script>
-// ================================
-// SCROLL PROGRESS BAR (THROTTLED)
-// ================================
-const progressBar = document.getElementById('scroll-progress');
-let ticking = false;
+    </div>
+    <div class="action-col">
+      <a href="https://drive.google.com/file/d/1TV0fqkREahK4XbjnFWWcbf1iRezwV4Ot/view" target="_blank" class="btn btn-dl">
+        <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+        Download Resume
+      </a>
+    </div>
+  </div>
 
-window.addEventListener('scroll', () => {
-  if (!ticking) {
-    requestAnimationFrame(() => {
-      const scrollTop = window.scrollY;
-      const docHeight = document.body.scrollHeight - window.innerHeight;
-      progressBar.style.width = ((scrollTop / docHeight) * 100) + '%';
-      ticking = false;
-    });
-    ticking = true;
-  }
-});
+  <!-- METRICS -->
+  <div class="metrics">
+    <div class="met"><span class="met-n">500K+</span><span class="met-l">API txns / month</span></div>
+    <div class="met"><span class="met-n">70%</span><span class="met-l">Onboarding automated</span></div>
+    <div class="met"><span class="met-n">60%</span><span class="met-l">API calls cut via cache</span></div>
+    <div class="met"><span class="met-n">40%</span><span class="met-l">Faster incident MTTR</span></div>
+    <div class="met"><span class="met-n">6</span><span class="met-l">Engineers mentored</span></div>
+    <div class="met"><span class="met-n">2×</span><span class="met-l">Performance awards</span></div>
+  </div>
+</div>
 
-// ================================
-// FADE-IN & SKILL PILL ANIMATIONS
-// ================================
-const fadeElements = document.querySelectorAll('.fade-in');
-const skillElements = document.querySelectorAll('.resume-skill-pills');
+<!-- BODY -->
+<div class="body">
 
-const observerOptions = { threshold: 0.1 };
+  <!-- SUMMARY -->
+  <div class="section">
+    <h2 class="st">Profile</h2>
+    <p class="summary">
+      <strong>Senior Backend Engineer</strong> specialising in <strong>distributed, event-driven systems</strong> on Java / Spring Boot — built at <strong>500K+ transaction/month scale</strong> across government and enterprise domains. Deep expertise in <strong>Kafka-based async pipelines</strong>, idempotent integrations, reactive architecture (Spring WebFlux), and observability. Proven tech lead with mentoring experience and measurable delivery outcomes. Actively exploring <strong>LLM and RAG integrations</strong> to extend backend platforms with agentic AI capabilities.
+    </p>
+  </div>
 
-const observer = new IntersectionObserver((entries, obs) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      if (entry.target.classList.contains('resume-skill-pills')) {
-        entry.target.querySelectorAll('li').forEach((li, i) => {
-          li.style.transitionDelay = `${i * 0.1}s`;
-          li.classList.add('visible');
-        });
-      } else {
-        entry.target.classList.add('visible');
-      }
-      obs.unobserve(entry.target);
-    }
-  });
-}, observerOptions);
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <h2 class="st">Experience</h2>
 
-fadeElements.forEach(el => observer.observe(el));
-skillElements.forEach(el => observer.observe(el));
+    <div class="job">
+      <div class="jh">
+        <div>
+          <div class="jco">Software Engineer &nbsp;·&nbsp; Innova Solutions</div>
+          <div class="jproj">Onboarding &amp; Setup Portal</div>
+        </div>
+        <div style="text-align:right">
+          <div class="jdate">Apr 2024 – Present</div>
+          <div class="jloc" style="margin-top:4px">Hyderabad, India</div>
+        </div>
+      </div>
+      <p class="jctx">Enterprise HR automation for a Fortune-500 client · 5-system integration (WorkLlama, Oracle Fusion HCM/PPM, First Advantage, I-9, Dropbox) · 100K+ monthly transactions</p>
+      <ul>
+        <li><strong>Owned system design for 5-vendor async integration.</strong> Replaced synchronous blocking calls with Kafka-backed pipelines and compensating transactions — eliminated production timeouts across 10K+ daily requests and <strong>cut p95 latency 40%</strong>. Authored full tech spec including idempotency contracts, retry-with-backoff, and dead-letter queue strategy.</li>
+        <li><strong>Automated 70% of manual onboarding workflows</strong> with zero data loss under vendor outages — implemented at-least-once delivery with deduplication keys across all five integrations.</li>
+        <li><strong>Led observability from zero:</strong> introduced Jaeger distributed tracing and centralised ELK logging with correlation IDs across all service boundaries — <strong>reduced mean incident resolution from hours to under 20 minutes</strong>.</li>
+        <li>Mentored 6 engineers through weekly architecture reviews and OpenAPI-first design workshops — <strong>team feature velocity +30%, regression rate down ~25%</strong> within two quarters.</li>
+        <li>Championed SonarLint + Jenkins quality gates, shifting security left in CI — <strong>reduced production defect escapes by 20%</strong>.</li>
+      </ul>
+      <p class="tstack"><strong>Stack:</strong> Java 17, Spring Boot, Apache Kafka, Oracle DB, Docker, Kubernetes, Jaeger, ELK, Jenkins, Angular</p>
+    </div>
 
-// ================================
-// NEON PARTICLE CANVAS
-// ================================
-const canvas = document.getElementById('particle-canvas');
-const ctx = canvas.getContext('2d');
+    <div class="job">
+      <div class="jh">
+        <div>
+          <div class="jco">Software Engineer &nbsp;·&nbsp; Smart Rain &nbsp;<span style="font-size:.7rem;color:#d97706;font-weight:700">★ Standout Performer 2023</span></div>
+          <div class="jproj">SmartApp™ IoT Irrigation Platform</div>
+        </div>
+        <div style="text-align:right">
+          <div class="jdate">Mar 2023 – Mar 2024</div>
+          <div class="jloc" style="margin-top:4px">Hyderabad, India</div>
+        </div>
+      </div>
+      <p class="jctx">Concurrent sensor telemetry ingestion + live weather feed aggregation · Spring WebFlux, Redis, Spring Security, JWT, Angular</p>
+      <ul>
+        <li><strong>Architected reactive ingestion layer</strong> using Spring WebFlux/WebClient for concurrent IoT sensor streams — designed backpressure strategy sustaining peak load without thread exhaustion, enabling horizontal scaling without re-architecture.</li>
+        <li><strong>Designed multi-tier caching strategy</strong> (Redis TTL + cache-aside) for weather API data — <strong>cut downstream API calls 60%</strong> and dashboard load from ~3s to under 800ms at p95.</li>
+        <li>Implemented Spring Security–based JWT authentication with secure refresh-token rotation — <strong>zero authentication incidents</strong> across the full product lifecycle.</li>
+        <li>Delivered SmartApp™ operator dashboard in Angular — sensor maps, time-series analytics, alert workflows — adopted as primary interface from day one of launch.</li>
+      </ul>
+      <p class="tstack"><strong>Stack:</strong> Java, Spring Boot, Spring WebFlux, Redis, JWT, OAuth 2.0, Angular, TypeScript</p>
+    </div>
 
-const setCanvasSize = () => {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-};
-setCanvasSize();
-window.addEventListener('resize', () => {
-  clearTimeout(window.resizeTimeout);
-  window.resizeTimeout = setTimeout(setCanvasSize, 150);
-});
+    <div class="job">
+      <div class="jh">
+        <div>
+          <div class="jco">Junior Software Engineer &nbsp;·&nbsp; C-TEL Infosystems &nbsp;<span style="font-size:.7rem;color:#d97706;font-weight:700">★ Top Performer 2022</span></div>
+          <div class="jproj">Excise Dept. Automation – Govts. of Telangana &amp; Himachal Pradesh</div>
+        </div>
+        <div style="text-align:right">
+          <div class="jdate">Apr 2021 – Mar 2023</div>
+          <div class="jloc" style="margin-top:4px">Hyderabad, India</div>
+        </div>
+      </div>
+      <p class="jctx">Bottling unit, licensing, vendor &amp; retailer compliance, duty collection · 500K+ monthly transactions · Kafka, Redis, Microservices</p>
+      <ul>
+        <li><strong>Built microservices from scratch</strong> for full license lifecycle (issuance → renewal → revocation) across 12+ license categories and two government jurisdictions — designed bounded contexts and service contracts for independent deployment.</li>
+        <li><strong>Designed event-driven compliance pipeline</strong> (Kafka + Redis): async payment confirmation, compliance updates, and notification dispatch — <strong>eliminated 60% of manual processing steps</strong> and decoupled all downstream dependencies.</li>
+        <li><strong>Engineered idempotent REST integrations</strong> with GSP messaging, email services, payment gateways, and hardware devices including laser label printers and top-scanner machines.</li>
+        <li>Independently designed and built the complete Bottling Unit module — end-to-end backend APIs, workflow logic, and Angular UI screens integrated with core compliance systems.</li>
+      </ul>
+      <p class="tstack"><strong>Stack:</strong> Java, Spring Boot, Apache Kafka, Redis, PostgreSQL, Docker, Jenkins, Angular</p>
+    </div>
+  </div>
 
-class Particle {
-  constructor() { this.reset(); }
-  reset() {
-    this.x = Math.random() * canvas.width;
-    this.y = Math.random() * canvas.height;
-    this.vx = (Math.random() - 0.5) * 0.5;
-    this.vy = (Math.random() - 0.5) * 0.5;
-    this.size = Math.random() * 2 + 0.5;
-    this.alpha = Math.random() * 0.5 + 0.3;
-  }
-  update() {
-    this.x += this.vx;
-    this.y += this.vy;
-    if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) this.reset();
-  }
-  draw() {
-    ctx.beginPath();
-    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-    ctx.fillStyle = `rgba(124,58,237,${this.alpha})`;
-    ctx.shadowBlur = 8;
-    ctx.shadowColor = '#7c3aed';
-    ctx.fill();
-  }
-}
+  <!-- SKILLS -->
+  <div class="section">
+    <h2 class="st">Technical Skills</h2>
+    <div class="skills-wrap">
+      <div class="sk-row"><span class="sk-cat">Core Backend</span><div class="sk-pills"><span class="chip chip-b">Java 17</span><span class="chip chip-b">Spring Boot</span><span class="chip chip-b">Spring WebFlux</span><span class="chip chip-b">Spring Security</span><span class="chip chip-b">Spring Data JPA</span><span class="chip chip-b">Hibernate</span></div></div>
+      <div class="sk-row"><span class="sk-cat">System Design</span><div class="sk-pills"><span class="chip chip-g">Microservices</span><span class="chip chip-g">Event-Driven Arch.</span><span class="chip chip-g">CQRS</span><span class="chip chip-g">Idempotency</span><span class="chip chip-g">API Gateway</span></div></div>
+      <div class="sk-row"><span class="sk-cat">Messaging &amp; Data</span><div class="sk-pills"><span class="chip chip-b">Apache Kafka</span><span class="chip chip-b">Redis</span><span class="chip chip-b">PostgreSQL</span><span class="chip chip-b">Oracle DB</span><span class="chip chip-b">MongoDB</span></div></div>
+      <div class="sk-row"><span class="sk-cat">Cloud &amp; DevOps</span><div class="sk-pills"><span class="chip chip-b">AWS (EC2, S3, Lambda)</span><span class="chip chip-b">Docker</span><span class="chip chip-b">Kubernetes</span><span class="chip chip-b">Jenkins CI/CD</span></div></div>
+      <div class="sk-row"><span class="sk-cat">Observability</span><div class="sk-pills"><span class="chip chip-b">Jaeger</span><span class="chip chip-b">ELK Stack</span><span class="chip chip-b">Grafana</span></div></div>
+      <div class="sk-row"><span class="sk-cat">Security</span><div class="sk-pills"><span class="chip chip-b">OAuth 2.0</span><span class="chip chip-b">JWT / SSO</span></div></div>
+      <div class="sk-row"><span class="sk-cat">Agentic AI</span><div class="sk-pills"><span class="chip chip-p">Spring AI</span><span class="chip chip-p">Multi-Agent Orchestration</span><span class="chip chip-p">RAG</span><span class="chip chip-p">LLM APIs (Gemini, Claude)</span></div></div>
+      <div class="sk-row"><span class="sk-cat">Frontend</span><div class="sk-pills"><span class="chip chip-s">Angular</span><span class="chip chip-s">TypeScript</span><span class="chip chip-s">JavaScript ES6+</span><span class="chip chip-s">HTML5 / CSS3</span></div></div>
+    </div>
+  </div>
 
-// Adjust particle count for mobile
-const particleCount = window.innerWidth < 768 ? 50 : 100;
-const particles = Array.from({ length: particleCount }, () => new Particle());
+  <!-- PROJECT -->
+  <div class="section">
+    <h2 class="st">Personal Project</h2>
+    <div class="proj">
+      <div class="ptitle">
+        Automotive Customer Service Copilot
+        <span class="pbadge">Multi-Agent · 2026</span>
+      </div>
+      <ul>
+        <li>Built an AI-powered support dashboard using Spring Boot and LLM APIs (Gemini, Claude) that aggregates vehicle diagnostics, warranty status, and service history for customer support agents — eliminating context-switching across multiple systems.</li>
+        <li>Implemented RAG-based retrieval for service manual lookups and multi-agent orchestration patterns for parallel diagnostic response generation.</li>
+      </ul>
+      <div class="ptags">
+        <span class="ptag">Java</span><span class="ptag">Spring Boot</span><span class="ptag">Spring AI</span><span class="ptag">PostgreSQL</span><span class="ptag">Angular</span><span class="ptag">LLM APIs</span><span class="ptag">RAG</span><span class="ptag">Multi-Agent Orchestration</span>
+      </div>
+    </div>
+  </div>
 
-function animateParticles() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  particles.forEach(p => { p.update(); p.draw(); });
-  requestAnimationFrame(animateParticles);
-}
-animateParticles();
-      
-    </script>
-  </body>
+  <!-- AWARDS -->
+  <div class="section">
+    <h2 class="st">Awards</h2>
+    <div class="awards-row">
+      <div class="award">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        Standout Performer — Smart Rain, 2023
+      </div>
+      <div class="award">
+        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        Top Performer — C-TEL Infosystems, 2022
+      </div>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <h2 class="st">Education</h2>
+    <div class="edu-grid">
+      <div class="edu-card">
+        <div class="edu-deg">Master of Computer Applications</div>
+        <div class="edu-univ">Osmania University, Hyderabad</div>
+        <div class="edu-meta">CGPA 7.6 / 10 &nbsp;·&nbsp; 2021</div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-deg">Bachelor of Computer Applications</div>
+        <div class="edu-univ">BRABU, Muzaffarpur</div>
+        <div class="edu-meta">78.6% &nbsp;·&nbsp; 2018</div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-deg">Intermediate of Science (Maths)</div>
+        <div class="edu-univ">BSEB, Bihar</div>
+        <div class="edu-meta">69% &nbsp;·&nbsp; 2015</div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /body -->
+</div><!-- /page -->
+</body>
 </html>
